@@ -183,4 +183,4 @@ $RECYCLE.BIN/
 # End of https://www.toptal.com/developers/gitignore/api/node,react,windows
 
 # 파일 제외(node_modules)
-node_modules/
+react-app/node_modules/
