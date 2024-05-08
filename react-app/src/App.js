@@ -54,5 +54,5 @@ function App() {
 
 export default App;
 // APP : 컴포넌트
-//노드환경에 등록시킨다
+// 노드환경에 등록시킨다
 // index.js에 import 됨
