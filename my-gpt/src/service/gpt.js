@@ -10,7 +10,7 @@ export const CallGpt = async ({prompt}) => {
         },
         body: JSON.stringify({
             "model": "gpt-3.5-turbo",
-            "message" : [{
+            "messages" : [{
                 "role" : "user",
                 "content" : prompt,
             }],
@@ -18,9 +18,9 @@ export const CallGpt = async ({prompt}) => {
             "max_tokens" : 1_000,
         })
     });
-    
 
     const responseDate = await response.json();
+    
     const message = responseDate.choices[0].message.content;
-    console.log(message)
+    return message;
 }
